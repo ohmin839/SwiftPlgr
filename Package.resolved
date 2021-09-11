@@ -9,6 +9,15 @@
           "revision": "be05cdc3b0bc1546162741be6d4e1b891dab7451",
           "version": "4.0.0"
         }
+      },
+      {
+        "package": "SwiftParamTest",
+        "repositoryURL": "https://github.com/YusukeHosonuma/SwiftParamTest.git",
+        "state": {
+          "branch": null,
+          "revision": "218fbf3541671a9341491dd67c9b4ab3f23e16a2",
+          "version": "2.2.0"
+        }
       }
     ]
   },
