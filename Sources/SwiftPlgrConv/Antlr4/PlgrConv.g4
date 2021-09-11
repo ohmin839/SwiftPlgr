@@ -28,7 +28,7 @@ smallNasableGamma: SMALL_NU SMALL_GAMMA # smallNasableGammaGamma
                  | SMALL_NU SMALL_XI # smallNasableGammaXi
                  ;
 
-nonFinalSigma: 's' alphabet ;
+nonFinalSigma: SMALL_SIGMA alphabet ;
 
 singleAlphabet: LARGE_ALPHA # largeAlpha
         | LARGE_EPSILON # largeEpsilon
@@ -141,7 +141,7 @@ LGUILLEMET: '<<' ;
 RGUILLEMET: '>>' ;
 EMDASH: '--' ;
 
-SPACE: ' '+ ;
+SPACE: [ \t]+ ;
 NEWLINE: '\r'? '\n' ;
 
 ANYCHAR: . ;
