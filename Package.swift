@@ -16,6 +16,9 @@ let package = Package(
         .target(
             name: "SwiftPlgr",
             dependencies: []),
+        .target(
+            name: "SwiftPlgrConv",
+            dependencies: ["Antlr4"]),
         .testTarget(
             name: "SwiftPlgrTests",
             dependencies: ["SwiftPlgr"]),
