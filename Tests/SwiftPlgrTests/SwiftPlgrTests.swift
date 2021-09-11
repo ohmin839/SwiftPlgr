@@ -20,16 +20,21 @@ final class SwiftPlgrTests: XCTestCase {
         let process = Process()
         process.executableURL = fooBinary
 
-        let pipe = Pipe()
-        process.standardOutput = pipe
+        let inputPipe = Pipe()
+        process.standardInput = inputPipe
+        inputPipe.fileHandleForWriting.write(">'anthr^opos".data(using: .utf8)!)
+        try! inputPipe.fileHandleForWriting.close()
+        
+        let outputPipe = Pipe()
+        process.standardOutput = outputPipe
 
         try process.run()
         process.waitUntilExit()
 
-        let data = pipe.fileHandleForReading.readDataToEndOfFile()
+        let data = outputPipe.fileHandleForReading.readDataToEndOfFile()
         let output = String(data: data, encoding: .utf8)
 
-        XCTAssertEqual(output, "Hello, world!\n")
+        XCTAssertEqual(output, "ἄνθρωπος")
         #endif
     }
 
