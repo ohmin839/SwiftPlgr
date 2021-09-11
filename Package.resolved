@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Antlr4",
+        "repositoryURL": "/Users/ohmin/workspace/swift/SwiftPlgr/Antlr4",
+        "state": {
+          "branch": null,
+          "revision": "be05cdc3b0bc1546162741be6d4e1b891dab7451",
+          "version": "4.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
