@@ -5,6 +5,10 @@ import PackageDescription
 
 let package = Package(
     name: "SwiftPlgr",
+    products: [
+        .executable(name: "swiftplgr", targets: ["SwiftPlgr"]),
+        .library(name: "SwiftPlgr", type: .dynamic,targets: ["SwiftPlgrConv"])
+    ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
